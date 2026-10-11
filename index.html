@@ -1,0 +1,2042 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Muhammad Talib Raza · Environmental Engineer</title>
+<meta name="description" content="Environmental Engineer | Wastewater Treatment, Water Reuse, HSE & Sustainability" />
+<meta name="author" content="Muhammad Talib Raza" />
+<meta name="theme-color" content="#0d3b2e" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  /* ============================================================
+     ROOT — Forest & Gold Theme (Environmental Premium)
+     ============================================================ */
+  :root {
+    --forest-950: #061a13;
+    --forest-900: #0a2a1f;
+    --forest-800: #0d3b2e;
+    --forest-700: #114d3c;
+    --forest-600: #16634e;
+    --forest-500: #1e7a60;
+    --forest-400: #2e9678;
+    --forest-300: #6bbfa6;
+    --forest-200: #b3ddce;
+    --forest-100: #e0f2ea;
+
+    --gold-900: #5c4410;
+    --gold-800: #7d5e18;
+    --gold-700: #a17a20;
+    --gold-600: #c9a227;
+    --gold-500: #d9b441;
+    --gold-400: #e6c96a;
+    --gold-300: #f0dc9a;
+    --gold-200: #f7ecc4;
+
+    --sand: #f7f5f0;
+    --cream: #f2efe8;
+    --ivory: #fdfcfa;
+    --ink: #0a1f18;
+    --muted: #5c6b64;
+    --line: #e0dccf;
+    --white: #ffffff;
+
+    --shadow-xs: 0 2px 8px rgba(10, 42, 31, .04);
+    --shadow-sm: 0 8px 24px rgba(10, 42, 31, .07);
+    --shadow-md: 0 18px 48px rgba(10, 42, 31, .10);
+    --shadow-lg: 0 34px 84px rgba(10, 42, 31, .16);
+    --shadow-gold: 0 18px 48px rgba(201, 162, 39, .25);
+
+    --radius-sm: 10px;
+    --radius: 18px;
+    --radius-lg: 26px;
+    --radius-xl: 34px;
+
+    --transition: .4s cubic-bezier(.4, 0, .2, 1);
+    --transition-fast: .25s cubic-bezier(.4, 0, .2, 1);
+  }
+
+  /* DARK MODE */
+  body.dark-mode {
+    --sand: #061a13;
+    --cream: #0a2a1f;
+    --ivory: #04120d;
+    --ink: #e3f0ea;
+    --muted: #8fa89e;
+    --line: #1a3f31;
+    --white: #0a2a1f;
+  }
+
+  body.dark-mode .info-card,
+  body.dark-mode .skill-card,
+  body.dark-mode .project-card,
+  body.dark-mode .pub,
+  body.dark-mode .cert,
+  body.dark-mode .lead,
+  body.dark-mode .chip,
+  body.dark-mode .btn-ghost,
+  body.dark-mode .stat {
+    background: #0a2a1f;
+    border-color: #1a3f31;
+  }
+
+  body.dark-mode .tag {
+    background: #0f3a2b;
+    color: var(--forest-200);
+    border-color: #1a3f31;
+  }
+
+  body.dark-mode .metric {
+    background: linear-gradient(135deg, #0f3a2b, #13442f);
+    border-color: #1a3f31;
+  }
+
+  body.dark-mode nav ul.open { background: #061a13; }
+
+  body.dark-mode header.nav {
+    background: rgba(4, 18, 13, .92);
+    border-color: #1a3f31;
+  }
+
+  /* ============================================================
+     RESET
+     ============================================================ */
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: var(--ink);
+    background: var(--ivory);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    transition: background .4s, color .4s;
+  }
+
+  a { color: inherit; text-decoration: none; transition: var(--transition-fast); }
+  img { max-width: 100%; display: block; }
+  button { font-family: inherit; cursor: pointer; }
+
+  .container { max-width: 1180px; margin: 0 auto; padding: 0 26px; }
+
+  ::-webkit-scrollbar { width: 10px; }
+  ::-webkit-scrollbar-track { background: var(--cream); }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, var(--forest-600), var(--gold-600));
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, var(--forest-700), var(--gold-700));
+  }
+
+  /* ============================================================
+     PROGRESS BAR
+     ============================================================ */
+  .progress-bar {
+    position: fixed; top: 0; left: 0;
+    height: 3px; width: 0%;
+    background: linear-gradient(90deg, var(--forest-500), var(--gold-500));
+    z-index: 999;
+    transition: width .1s linear;
+  }
+
+  /* ============================================================
+     BACK TO TOP
+     ============================================================ */
+  .back-to-top {
+    position: fixed; bottom: 30px; right: 30px;
+    width: 48px; height: 48px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--forest-700), var(--forest-500));
+    color: #fff; border: 0;
+    display: grid; place-items: center;
+    font-size: 1.3rem;
+    box-shadow: var(--shadow-md);
+    opacity: 0; visibility: hidden;
+    transform: translateY(20px);
+    transition: var(--transition);
+    z-index: 90;
+  }
+  .back-to-top.visible { opacity: 1; visibility: visible; transform: translateY(0); }
+  .back-to-top:hover { transform: translateY(-5px); box-shadow: 0 20px 48px rgba(17, 77, 60, .45); }
+
+  /* ============================================================
+     THEME TOGGLE
+     ============================================================ */
+  .theme-toggle {
+    background: var(--white);
+    border: 1px solid var(--line);
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    display: grid; place-items: center;
+    font-size: 1.1rem;
+    color: var(--ink);
+    transition: var(--transition);
+  }
+  .theme-toggle:hover { transform: rotate(20deg) scale(1.08); border-color: var(--gold-500); }
+
+  /* ============================================================
+     NAVIGATION
+     ============================================================ */
+  header.nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(253, 252, 250, .92);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    border-bottom: 1px solid var(--line);
+    transition: background .3s, border-color .3s;
+  }
+
+  .nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0;
+    gap: 20px;
+  }
+
+  .brand {
+    display: flex; align-items: center; gap: 12px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--forest-900);
+    letter-spacing: -.3px;
+  }
+  body.dark-mode .brand { color: var(--forest-200); }
+
+  .brand .logo {
+    width: 42px; height: 42px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--forest-700), var(--forest-500));
+    display: grid; place-items: center;
+    color: var(--gold-300);
+    font-weight: 800;
+    font-size: .8rem;
+    font-family: 'Inter', sans-serif;
+    box-shadow: 0 8px 20px rgba(17, 77, 60, .32);
+    border: 1px solid rgba(201, 162, 39, .30);
+    transition: var(--transition);
+  }
+  .brand:hover .logo { transform: rotate(-8deg) scale(1.05); }
+
+  nav ul {
+    display: flex; gap: 26px;
+    list-style: none;
+    font-size: .88rem;
+    font-weight: 500;
+    color: var(--muted);
+  }
+  nav a { position: relative; padding: 4px 0; font-weight: 500; }
+  nav a::after {
+    content: "";
+    position: absolute;
+    left: 0; right: 0; bottom: -3px;
+    height: 1.5px;
+    background: linear-gradient(90deg, var(--gold-500), var(--forest-500));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .35s;
+  }
+  nav a:hover, nav a.active { color: var(--forest-700); }
+  body.dark-mode nav a:hover, body.dark-mode nav a.active { color: var(--gold-300); }
+  nav a:hover::after, nav a.active::after { transform: scaleX(1); }
+
+  .menu-btn {
+    display: none;
+    background: none; border: 0;
+    font-size: 1.6rem;
+    color: var(--forest-800);
+    cursor: pointer;
+  }
+  body.dark-mode .menu-btn { color: var(--forest-200); }
+
+  /* ============================================================
+     HERO — CENTERED LAYOUT with circular photo
+     ============================================================ */
+  .hero {
+    position: relative;
+    overflow: hidden;
+    padding: 80px 0 80px;
+    background:
+      radial-gradient(1000px 600px at 90% -10%, rgba(201, 162, 39, .10), transparent 60%),
+      radial-gradient(900px 500px at -10% 110%, rgba(30, 122, 96, .10), transparent 55%),
+      linear-gradient(180deg, var(--sand) 0%, var(--ivory) 100%);
+    transition: background .4s;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: -150px; right: -150px;
+    width: 500px; height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(46, 150, 120, .16), transparent 70%);
+    animation: float 10s ease-in-out infinite;
+    pointer-events: none;
+  }
+  .hero::after {
+    content: "";
+    position: absolute;
+    bottom: -180px; left: -120px;
+    width: 440px; height: 440px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(201, 162, 39, .12), transparent 70%);
+    animation: float 12s ease-in-out infinite reverse;
+    pointer-events: none;
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-26px) scale(1.05); }
+  }
+
+  .hero-centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    gap: 30px;
+  }
+
+  /* Photo — circular with animated ring */
+  .hero-photo {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+  }
+  .hero-photo::before {
+    content: "";
+    position: absolute;
+    inset: -10px;
+    border-radius: 50%;
+    background: conic-gradient(from 0deg,
+      var(--forest-400), var(--gold-400), var(--forest-300),
+      var(--forest-600), var(--gold-500), var(--forest-400));
+    animation: spin 8s linear infinite;
+    z-index: 0;
+  }
+  .hero-photo::after {
+    content: "";
+    position: absolute;
+    inset: -3px;
+    border-radius: 50%;
+    background: var(--ivory);
+    z-index: 1;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .hero-photo img {
+    position: relative;
+    z-index: 2;
+    width: 100%; height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    border: 4px solid var(--ivory);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .hero-photo .status-dot {
+    position: absolute;
+    bottom: 12px; right: 12px;
+    width: 22px; height: 22px;
+    background: #2eb872;
+    border: 4px solid var(--ivory);
+    border-radius: 50%;
+    z-index: 3;
+    animation: pulse-green 2s infinite;
+  }
+  @keyframes pulse-green {
+    0%, 100% { box-shadow: 0 0 0 3px rgba(46, 184, 114, .22); }
+    50% { box-shadow: 0 0 0 8px rgba(46, 184, 114, .05); }
+  }
+
+  .hero-text { max-width: 780px; }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    font-size: .72rem;
+    font-weight: 600;
+    letter-spacing: .20em;
+    text-transform: uppercase;
+    color: var(--forest-700);
+    background: rgba(46, 150, 120, .12);
+    padding: 8px 18px;
+    border-radius: 999px;
+    margin-bottom: 22px;
+    border: 1px solid rgba(46, 150, 120, .28);
+  }
+  body.dark-mode .eyebrow { color: var(--forest-300); }
+
+  .eyebrow .pulse {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--gold-500);
+    box-shadow: 0 0 0 0 rgba(201, 162, 39, .7);
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(201, 162, 39, .6); }
+    70% { box-shadow: 0 0 0 14px rgba(201, 162, 39, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(201, 162, 39, 0); }
+  }
+
+  h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: clamp(2rem, 5vw, 3.6rem);
+    line-height: 1.08;
+    font-weight: 800;
+    color: var(--forest-950);
+    letter-spacing: -1.2px;
+  }
+  body.dark-mode h1 { color: #e3f0ea; }
+
+  h1 .accent {
+    background: linear-gradient(120deg, var(--forest-600) 0%, var(--forest-400) 40%, var(--gold-500) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-style: italic;
+    font-weight: 900;
+  }
+
+  .typed-line {
+    display: block;
+    min-height: 1.15em;
+    margin-top: 16px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: clamp(.9rem, 1.5vw, 1.1rem);
+    color: var(--gold-700);
+    letter-spacing: 0;
+  }
+  body.dark-mode .typed-line { color: var(--gold-300); }
+
+  .cursor-blink {
+    display: inline-block;
+    width: 2px; height: 1.1em;
+    background: var(--gold-500);
+    margin-left: 3px;
+    vertical-align: text-bottom;
+    animation: blink 1s step-end infinite;
+  }
+  @keyframes blink { 0%, 50% { opacity: 1; } 51%, 100% { opacity: 0; } }
+
+  .tagline {
+    margin-top: 22px;
+    font-size: 1.02rem;
+    color: #3a4d45;
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.75;
+  }
+  body.dark-mode .tagline { color: #c5d9d0; }
+  .tagline strong { color: var(--forest-800); font-weight: 600; }
+  body.dark-mode .tagline strong { color: var(--forest-200); }
+
+  .cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 30px;
+    justify-content: center;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 26px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: .9rem;
+    transition: var(--transition);
+    border: 1.5px solid transparent;
+    cursor: pointer;
+    letter-spacing: .2px;
+    position: relative;
+    overflow: hidden;
+  }
+  .btn-primary {
+    background: linear-gradient(135deg, var(--forest-700), var(--forest-500));
+    color: #fff;
+    box-shadow: 0 12px 28px rgba(17, 77, 60, .28);
+  }
+  .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 18px 40px rgba(17, 77, 60, .42); }
+
+  .btn-gold {
+    background: linear-gradient(135deg, var(--gold-700), var(--gold-500));
+    color: #fff;
+    box-shadow: var(--shadow-gold);
+  }
+  .btn-gold:hover { transform: translateY(-3px); box-shadow: 0 20px 48px rgba(201, 162, 39, .42); }
+
+  .btn-ghost {
+    background: var(--white);
+    color: var(--forest-800);
+    border-color: var(--line);
+    box-shadow: var(--shadow-sm);
+  }
+  .btn-ghost:hover { border-color: var(--gold-500); color: var(--gold-700); transform: translateY(-3px); }
+
+  .quick-facts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 28px;
+    justify-content: center;
+  }
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: .77rem;
+    font-weight: 500;
+    color: var(--forest-800);
+    background: var(--white);
+    border: 1px solid var(--line);
+    padding: 8px 15px;
+    border-radius: 999px;
+    box-shadow: var(--shadow-xs);
+    transition: var(--transition-fast);
+  }
+  .chip:hover { transform: translateY(-2px); border-color: var(--gold-400); }
+  .chip .dot {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--forest-500), var(--gold-500));
+  }
+
+  /* ============================================================
+     SECTIONS
+     ============================================================ */
+  section { padding: 86px 0; position: relative; }
+  section:nth-of-type(even) { background: var(--cream); }
+
+  .section-head { margin-bottom: 50px; max-width: 820px; }
+  .section-tag {
+    display: inline-block;
+    font-size: .70rem;
+    font-weight: 700;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: var(--gold-700);
+    margin-bottom: 12px;
+  }
+  body.dark-mode .section-tag { color: var(--gold-400); }
+
+  .section-head h2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+    font-weight: 700;
+    color: var(--forest-950);
+    letter-spacing: -.6px;
+    line-height: 1.15;
+  }
+  body.dark-mode .section-head h2 { color: #e3f0ea; }
+
+  .section-head h2 .underline {
+    background: linear-gradient(180deg, transparent 60%, rgba(201, 162, 39, .30) 60%);
+    padding: 0 5px;
+  }
+
+  .section-head p {
+    color: var(--muted);
+    margin-top: 12px;
+    font-size: .98rem;
+    line-height: 1.7;
+  }
+
+  /* ============================================================
+     ABOUT
+     ============================================================ */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 48px;
+    align-items: start;
+  }
+  .about-text p {
+    color: #3a4d45;
+    margin-bottom: 18px;
+    font-size: .96rem;
+    line-height: 1.8;
+  }
+  body.dark-mode .about-text p { color: #c5d9d0; }
+
+  .about-text p:first-child::first-letter {
+    font-family: 'Outfit', sans-serif;
+    font-size: 3.4rem;
+    font-weight: 800;
+    color: var(--gold-600);
+    float: left;
+    line-height: .85;
+    padding: 8px 14px 0 0;
+  }
+
+  .info-card {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: 30px;
+    box-shadow: var(--shadow-md);
+    position: relative;
+    overflow: hidden;
+  }
+  .info-card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--forest-600), var(--gold-500));
+  }
+  .info-card h4 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.3rem;
+    color: var(--forest-900);
+    margin-bottom: 16px;
+    font-weight: 700;
+  }
+  body.dark-mode .info-card h4 { color: var(--forest-200); }
+
+  .info-card ul { list-style: none; font-size: .89rem; }
+  .info-card li {
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 12px 0;
+    border-bottom: 1px dashed var(--line);
+    color: #3a4d45;
+  }
+  body.dark-mode .info-card li { color: #c5d9d0; }
+  .info-card li:last-child { border-bottom: 0; }
+  .info-card li span:first-child { color: var(--muted); font-weight: 500; }
+  .info-card li span:last-child { font-weight: 600; color: var(--forest-800); text-align: right; }
+  body.dark-mode .info-card li span:last-child { color: var(--forest-200); }
+
+  /* ============================================================
+     STATS
+     ============================================================ */
+  .stats-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 22px;
+    margin-top: 48px;
+  }
+  .stat {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 26px 22px;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+  }
+  .stat::before {
+    content: "";
+    position: absolute;
+    bottom: 0; left: 50%;
+    transform: translateX(-50%);
+    width: 0; height: 3px;
+    background: linear-gradient(90deg, var(--forest-500), var(--gold-500));
+    transition: width .5s;
+  }
+  .stat:hover::before { width: 100%; }
+  .stat:hover { transform: translateY(-6px); box-shadow: var(--shadow-md); }
+
+  .stat .num {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--forest-800);
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 2px;
+  }
+  body.dark-mode .stat .num { color: var(--forest-200); }
+  .stat .num .suffix { font-size: 1.4rem; color: var(--gold-600); }
+  .stat .lbl {
+    font-size: .76rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-top: 12px;
+    font-weight: 600;
+  }
+
+  /* ============================================================
+     SKILLS
+     ============================================================ */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 22px;
+  }
+  .skill-card {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 28px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+  }
+  .skill-card::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 3px;
+    background: linear-gradient(90deg, var(--forest-500), var(--gold-500));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .45s;
+  }
+  .skill-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); }
+  .skill-card:hover::after { transform: scaleX(1); }
+
+  .skill-card h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.25rem;
+    color: var(--forest-800);
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-weight: 700;
+  }
+  body.dark-mode .skill-card h3 { color: var(--forest-200); }
+  .skill-card h3 .ic {
+    width: 44px; height: 44px;
+    border-radius: 12px;
+    display: grid; place-items: center;
+    font-size: 1.15rem;
+    flex-shrink: 0;
+    background: linear-gradient(135deg, rgba(46, 150, 120, .18), rgba(201, 162, 39, .18));
+    color: var(--forest-700);
+  }
+  body.dark-mode .skill-card h3 .ic { color: var(--gold-300); }
+
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .tag {
+    font-size: .74rem;
+    background: #f0ede4;
+    color: var(--forest-800);
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: 1px solid #e0dccf;
+    font-weight: 500;
+    transition: var(--transition-fast);
+  }
+  .tag:hover {
+    background: linear-gradient(135deg, rgba(46, 150, 120, .18), rgba(201, 162, 39, .18));
+    border-color: var(--gold-400);
+  }
+
+  /* ============================================================
+     TIMELINE
+     ============================================================ */
+  .timeline { position: relative; padding-left: 36px; }
+  .timeline::before {
+    content: "";
+    position: absolute;
+    left: 10px; top: 8px; bottom: 8px;
+    width: 2px;
+    background: linear-gradient(180deg, var(--forest-500), var(--gold-500), var(--forest-400));
+    border-radius: 2px;
+  }
+  .tl-item { position: relative; margin-bottom: 42px; transition: var(--transition-fast); }
+  .tl-item:last-child { margin-bottom: 0; }
+  .tl-item::before {
+    content: "";
+    position: absolute;
+    left: -32px; top: 8px;
+    width: 18px; height: 18px;
+    border-radius: 50%;
+    background: var(--white);
+    border: 3px solid var(--forest-600);
+    box-shadow: 0 0 0 5px rgba(30, 122, 96, .14);
+    z-index: 1;
+    transition: var(--transition-fast);
+  }
+  .tl-item:hover::before {
+    border-color: var(--gold-500);
+    box-shadow: 0 0 0 8px rgba(201, 162, 39, .14);
+  }
+  .tl-item h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.3rem;
+    color: var(--forest-900);
+    font-weight: 700;
+  }
+  body.dark-mode .tl-item h3 { color: var(--forest-200); }
+
+  .tl-meta {
+    font-size: .84rem;
+    color: var(--gold-700);
+    font-weight: 600;
+    margin: 6px 0 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  body.dark-mode .tl-meta { color: var(--gold-400); }
+  .tl-meta .place { color: var(--muted); font-weight: 500; }
+  .tl-meta .sep { color: var(--line); }
+
+  .tl-item ul { list-style: none; color: #3a4d45; font-size: .92rem; }
+  body.dark-mode .tl-item ul { color: #c5d9d0; }
+  .tl-item ul li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 7px;
+    line-height: 1.7;
+  }
+  .tl-item ul li::before {
+    content: "";
+    position: absolute;
+    left: 4px; top: 11px;
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--gold-500);
+  }
+
+  /* ============================================================
+     PROJECTS
+     ============================================================ */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 28px;
+  }
+  .project-card {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+  }
+  .project-card:hover { transform: translateY(-10px); box-shadow: var(--shadow-lg); }
+
+  .project-head {
+    background: linear-gradient(135deg, var(--forest-900), var(--forest-600));
+    color: #fff;
+    padding: 26px 28px;
+    position: relative;
+    overflow: hidden;
+  }
+  .project-head::before {
+    content: "";
+    position: absolute;
+    top: -40px; right: -40px;
+    width: 160px; height: 160px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(201, 162, 39, .38), transparent 70%);
+  }
+  .project-head h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.3;
+    position: relative;
+    z-index: 1;
+  }
+  .project-head .date {
+    font-size: .76rem;
+    opacity: .95;
+    margin-top: 10px;
+    position: relative;
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(201, 162, 39, .26);
+    padding: 5px 12px;
+    border-radius: 6px;
+    border: 1px solid rgba(201, 162, 39, .38);
+  }
+
+  .project-body {
+    padding: 26px 28px;
+    font-size: .92rem;
+    color: #3a4d45;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.7;
+  }
+  body.dark-mode .project-body { color: #c5d9d0; }
+  .project-body p { margin-bottom: 12px; }
+  .project-body strong { color: var(--forest-800); font-weight: 600; }
+  body.dark-mode .project-body strong { color: var(--forest-200); }
+
+  .metric-row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: auto;
+    padding-top: 18px;
+  }
+  .metric {
+    background: linear-gradient(135deg, #f0ede4, #e6f0eb);
+    border: 1px solid #e0dccf;
+    border-radius: 12px;
+    padding: 14px 16px;
+    flex: 1;
+    min-width: 100px;
+    text-align: center;
+    transition: var(--transition-fast);
+  }
+  .metric:hover { transform: translateY(-3px); }
+  .metric .num {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--forest-700);
+    line-height: 1;
+  }
+  .metric .lbl {
+    font-size: .66rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    margin-top: 8px;
+    font-weight: 600;
+  }
+
+  /* ============================================================
+     PUBLICATIONS
+     ============================================================ */
+  .pub-list { display: grid; gap: 18px; }
+  .pub {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-left: 5px solid var(--gold-500);
+    border-radius: 12px;
+    padding: 24px 28px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+  }
+  .pub:hover {
+    border-left-color: var(--forest-600);
+    transform: translateX(8px);
+    box-shadow: var(--shadow-md);
+  }
+  .pub h4 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.15rem;
+    color: var(--forest-900);
+    font-weight: 700;
+    margin-bottom: 8px;
+    line-height: 1.35;
+  }
+  body.dark-mode .pub h4 { color: var(--forest-200); }
+
+  .pub .venue {
+    font-size: .84rem;
+    color: var(--forest-600);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .pub .venue::before { content: "📖"; font-size: .9rem; }
+
+  .pub .status {
+    display: inline-block;
+    font-size: .68rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, rgba(201, 162, 39, .20), rgba(46, 150, 120, .16));
+    color: var(--forest-700);
+    padding: 5px 12px;
+    border-radius: 6px;
+    margin-top: 12px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    border: 1px solid rgba(201, 162, 39, .30);
+  }
+  body.dark-mode .pub .status { color: var(--forest-200); }
+
+  .pub-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: .76rem;
+    font-weight: 600;
+    color: var(--gold-700);
+    margin-top: 10px;
+    transition: var(--transition-fast);
+  }
+  .pub-link:hover { color: var(--gold-900); transform: translateX(3px); }
+  body.dark-mode .pub-link { color: var(--gold-300); }
+
+  /* ============================================================
+     CERTIFICATIONS
+     ============================================================ */
+  .cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 14px;
+  }
+  .cert {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 18px 20px;
+    font-size: .86rem;
+    box-shadow: var(--shadow-xs);
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    transition: var(--transition-fast);
+  }
+  .cert:hover {
+    border-color: var(--gold-400);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+  }
+
+  .cert .badge {
+    flex: 0 0 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: grid; place-items: center;
+    background: linear-gradient(135deg, var(--forest-700), var(--forest-500));
+    color: var(--gold-300);
+    font-weight: 800;
+    font-size: .66rem;
+    text-align: center;
+    line-height: 1;
+    letter-spacing: .5px;
+    padding: 4px;
+    border: 1px solid rgba(201, 162, 39, .30);
+  }
+  .cert .badge.gold {
+    background: linear-gradient(135deg, var(--gold-700), var(--gold-400));
+    color: #1a1206;
+  }
+  .cert .badge.mixed {
+    background: linear-gradient(135deg, var(--forest-600), var(--gold-400));
+    color: #04120d;
+  }
+
+  .cert .name {
+    font-weight: 600;
+    color: var(--forest-900);
+    line-height: 1.4;
+    font-size: .86rem;
+  }
+  body.dark-mode .cert .name { color: var(--forest-200); }
+
+  .cert .issuer { font-size: .74rem; color: var(--muted); margin-top: 4px; }
+
+  .cert .cred-id {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: .65rem;
+    color: var(--muted);
+    margin-top: 4px;
+    opacity: .85;
+    letter-spacing: -.2px;
+  }
+
+  .cert .verify {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: .70rem;
+    font-weight: 600;
+    color: var(--gold-700);
+    margin-top: 6px;
+    transition: var(--transition-fast);
+    border-bottom: 1px dotted var(--gold-400);
+    padding-bottom: 1px;
+  }
+  .cert .verify:hover { color: var(--gold-900); border-bottom-style: solid; }
+  body.dark-mode .cert .verify { color: var(--gold-300); }
+
+  /* ============================================================
+     LEADERSHIP
+     ============================================================ */
+  .lead-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 18px;
+  }
+  .lead {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 24px 26px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+  }
+  .lead::before {
+    content: "";
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--forest-500), var(--gold-500));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .45s;
+  }
+  .lead:hover { transform: translateY(-6px); box-shadow: var(--shadow-md); }
+  .lead:hover::before { transform: scaleX(1); }
+
+  .lead h4 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.1rem;
+    color: var(--forest-900);
+    font-weight: 700;
+    line-height: 1.3;
+  }
+  body.dark-mode .lead h4 { color: var(--forest-200); }
+
+  .lead .role { font-size: .82rem; color: var(--gold-700); font-weight: 600; margin: 8px 0; }
+  body.dark-mode .lead .role { color: var(--gold-400); }
+  .lead .org { font-size: .84rem; color: var(--muted); line-height: 1.6; }
+
+  /* ============================================================
+     CONTACT
+     ============================================================ */
+  .contact-wrap {
+    background: linear-gradient(135deg, var(--forest-950) 0%, var(--forest-800) 55%, var(--forest-600) 100%);
+    color: #fff;
+    border-radius: var(--radius-xl);
+    padding: 68px 48px;
+    text-align: center;
+    box-shadow: var(--shadow-lg);
+    position: relative;
+    overflow: hidden;
+  }
+  .contact-wrap::before {
+    content: "";
+    position: absolute;
+    top: -120px; right: -120px;
+    width: 400px; height: 400px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(201, 162, 39, .26), transparent 65%);
+  }
+  .contact-wrap::after {
+    content: "";
+    position: absolute;
+    bottom: -140px; left: -100px;
+    width: 360px; height: 360px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(46, 150, 120, .20), transparent 65%);
+  }
+  .contact-wrap > * { position: relative; z-index: 1; }
+
+  .contact-wrap .tag {
+    color: var(--gold-300);
+    font-weight: 700;
+    letter-spacing: .22em;
+    font-size: .72rem;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    display: block;
+  }
+  .contact-wrap h2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: clamp(1.9rem, 3.8vw, 2.7rem);
+    font-weight: 800;
+    margin-bottom: 16px;
+    letter-spacing: -.6px;
+    line-height: 1.15;
+  }
+  .contact-wrap p {
+    opacity: .92;
+    max-width: 620px;
+    margin: 0 auto 36px;
+    font-size: .98rem;
+    line-height: 1.75;
+  }
+
+  .contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+  }
+  .contact-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, .09);
+    border: 1px solid rgba(201, 162, 39, .38);
+    padding: 13px 24px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: .88rem;
+    transition: var(--transition);
+    backdrop-filter: blur(8px);
+  }
+  .contact-links a:hover {
+    background: rgba(201, 162, 39, .28);
+    border-color: var(--gold-300);
+    transform: translateY(-3px);
+  }
+
+  .contact-emails {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    justify-content: center;
+    margin-top: 32px;
+    padding-top: 28px;
+    border-top: 1px solid rgba(255, 255, 255, .13);
+    font-size: .88rem;
+  }
+  .contact-emails div { display: flex; align-items: center; gap: 10px; opacity: .95; }
+  .contact-emails strong { font-weight: 600; color: var(--gold-300); }
+
+  /* ============================================================
+     FOOTER
+     ============================================================ */
+  footer {
+    text-align: center;
+    padding: 36px 0;
+    font-size: .82rem;
+    color: var(--muted);
+    border-top: 1px solid var(--line);
+    background: var(--ivory);
+  }
+  footer .heart {
+    color: var(--gold-500);
+    animation: heart-beat 1.6s ease-in-out infinite;
+    display: inline-block;
+  }
+  @keyframes heart-beat {
+    0%, 100% { transform: scale(1); }
+    25% { transform: scale(1.25); }
+    50% { transform: scale(1); }
+    75% { transform: scale(1.15); }
+  }
+
+  /* ============================================================
+     REVEAL
+     ============================================================ */
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: .9s cubic-bezier(.2, .7, .3, 1);
+  }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* ============================================================
+     RESPONSIVE
+     ============================================================ */
+  @media (max-width: 920px) {
+    .about-grid { grid-template-columns: 1fr; gap: 34px; }
+    .timeline { padding-left: 32px; }
+  }
+
+  @media (max-width: 720px) {
+    nav ul { display: none; }
+    nav ul.open {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 70px; left: 0; right: 0;
+      background: var(--ivory);
+      padding: 22px 26px;
+      border-bottom: 1px solid var(--line);
+      gap: 18px;
+      box-shadow: var(--shadow-md);
+    }
+    .menu-btn { display: block; }
+    section { padding: 62px 0; }
+    .contact-wrap { padding: 48px 24px; border-radius: 22px; }
+    .hero { padding: 56px 0 54px; }
+    .hero-photo { width: 160px; height: 160px; }
+    .about-text p:first-child::first-letter { font-size: 2.6rem; }
+    .cert-grid, .projects-grid { grid-template-columns: 1fr; }
+  }
+
+  @media (max-width: 400px) {
+    .hero-photo { width: 140px; height: 140px; }
+    h1 { font-size: 1.8rem; }
+    .btn { padding: 12px 20px; font-size: .86rem; }
+    .back-to-top { bottom: 20px; right: 20px; width: 44px; height: 44px; }
+  }
+
+  @media print {
+    header.nav, .back-to-top, .theme-toggle, .progress-bar, .cta-row, .contact-links { display: none !important; }
+    body { background: #fff; color: #000; }
+    section { padding: 20px 0; page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<!-- PROGRESS BAR -->
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- NAVIGATION -->
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="#top" class="brand">
+      <span class="logo">TR</span>
+      Muhammad Talib Raza
+    </a>
+    <nav>
+      <ul id="navlinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#publications" class="nav-link">Research</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <div style="display:flex; align-items:center; gap:10px;">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+      <button class="menu-btn" onclick="document.getElementById('navlinks').classList.toggle('open')" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO — CENTERED -->
+<section class="hero" id="top">
+  <div class="container hero-centered">
+    <div class="hero-photo">
+      <img src="talib.jfif" alt="Muhammad Talib Raza" />
+      <span class="status-dot"></span>
+    </div>
+
+    <div class="hero-text">
+      <span class="eyebrow">
+        <span class="pulse"></span>
+        Environmental Engineer · Open to Opportunities
+      </span>
+      <h1>
+        Engineering <span class="accent">cleaner water</span><br>
+        & a sustainable tomorrow.
+      </h1>
+      <span class="typed-line">
+        <span id="typedText"></span><span class="cursor-blink"></span>
+      </span>
+      <p class="tagline">
+        Environmental Engineering graduate from <strong>UET Taxila</strong> specializing in
+        <strong>wastewater treatment, water reuse, HSE compliance,</strong> and
+        <strong>sustainability</strong>. I translate research into practical,
+        impact-driven environmental solutions.
+      </p>
+
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#contact">Get in Touch →</a>
+        <a class="btn btn-gold" href="#projects">View Projects</a>
+        <a class="btn btn-ghost" href="#publications">Publications</a>
+      </div>
+
+      <div class="quick-facts">
+        <span class="chip"><span class="dot"></span> Islamabad, Pakistan</span>
+        <span class="chip"><span class="dot"></span> B.Sc. Environmental Engineering</span>
+        <span class="chip"><span class="dot"></span> Wastewater & Water Reuse</span>
+        <span class="chip"><span class="dot"></span> HSE & Risk Assessment</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="reveal">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">About Me</span>
+      <h2>Turning environmental <span class="underline">research</span> into real-world impact.</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          I am an Environmental Engineering graduate from the University of Engineering
+          and Technology (UET) Taxila, with a strong foundation in environmental management,
+          wastewater and solid waste management, HSE practices, environmental regulations,
+          and sustainability. I am well-versed in NEQS standards, industrial effluent
+          management, and environmental compliance.
+        </p>
+        <p>
+          My undergraduate research focused on optimizing a coagulation–flocculation and
+          chemical oxidation process for beverage industrial effluent, achieving final COD
+          and BOD₅ concentrations of <strong>115 mg/L</strong> and <strong>68 mg/L</strong>
+          respectively — meeting national discharge standards as verified by an accredited
+          laboratory.
+        </p>
+        <p>
+          I have practical exposure to water and wastewater analysis (COD, BOD₅, solids,
+          turbidity, jar testing), GIS mapping, EPANET, and Life Cycle Assessment
+          (ISO 14040/14044). I have contributed to multiple accepted conference papers on
+          wastewater sustainability, environmental risk assessment, and cleaner production.
+        </p>
+        <p>
+          I am eager to apply my technical and analytical skills to support safe, sustainable,
+          and environmentally responsible operations across industries, consultancies,
+          utilities, and research organizations.
+        </p>
+      </div>
+      <aside class="info-card">
+        <h4>Quick Facts</h4>
+        <ul>
+          <li><span>Location</span><span>Islamabad, Pakistan</span></li>
+          <li><span>Degree</span><span>B.Sc. Env. Engineering</span></li>
+          <li><span>University</span><span>UET Taxila</span></li>
+          <li><span>CGPA</span><span>3.13 / 4.00</span></li>
+          <li><span>Focus</span><span>Wastewater & Reuse</span></li>
+          <li><span>Languages</span><span>English, Urdu</span></li>
+        </ul>
+      </aside>
+    </div>
+
+    <div class="stats-row">
+      <div class="stat">
+        <div class="num"><span class="counter" data-target="5">0</span></div>
+        <div class="lbl">Publications</div>
+      </div>
+      <div class="stat">
+        <div class="num"><span class="counter" data-target="20">0</span><span class="suffix">+</span></div>
+        <div class="lbl">Certifications</div>
+      </div>
+      <div class="stat">
+        <div class="num"><span class="counter" data-target="88">0</span><span class="suffix">%</span></div>
+        <div class="lbl">COD Removal</div>
+      </div>
+      <div class="stat">
+        <div class="num"><span class="counter" data-target="4">0</span><span class="suffix">+</span></div>
+        <div class="lbl">Internships</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="reveal">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">Expertise</span>
+      <h2>Skills & <span class="underline">capabilities</span></h2>
+      <p>Technical, software, and professional competencies developed through coursework, research, and internships.</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3><span class="ic">💧</span> Wastewater & Water</h3>
+        <div class="tags">
+          <span class="tag">Wastewater Treatment Design</span>
+          <span class="tag">Sewerage Modeling</span>
+          <span class="tag">Industrial Effluent Assessment</span>
+          <span class="tag">Water Quality Analysis</span>
+          <span class="tag">Jar Testing</span>
+          <span class="tag">COD / BOD₅</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3><span class="ic">🛡️</span> HSE & Compliance</h3>
+        <div class="tags">
+          <span class="tag">HSE Compliance Monitoring</span>
+          <span class="tag">Risk Assessment</span>
+          <span class="tag">COSHH</span>
+          <span class="tag">PPE Management</span>
+          <span class="tag">Environmental Auditing</span>
+          <span class="tag">NEQS Standards</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3><span class="ic">🌍</span> Sustainability</h3>
+        <div class="tags">
+          <span class="tag">Life Cycle Assessment</span>
+          <span class="tag">EIA</span>
+          <span class="tag">Carbon Management</span>
+          <span class="tag">Solid Waste Management</span>
+          <span class="tag">ISO 14001</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3><span class="ic">🖥️</span> Software & Tools</h3>
+        <div class="tags">
+          <span class="tag">ArcGIS</span>
+          <span class="tag">EPANET</span>
+          <span class="tag">MS Excel</span>
+          <span class="tag">Power BI</span>
+          <span class="tag">MS Office</span>
+          <span class="tag">C++</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3><span class="ic">📋</span> Professional</h3>
+        <div class="tags">
+          <span class="tag">Technical Reporting</span>
+          <span class="tag">Site Supervision</span>
+          <span class="tag">Project Coordination</span>
+          <span class="tag">Team Leadership</span>
+          <span class="tag">Regulatory Understanding</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3><span class="ic">🧪</span> Analysis & Modeling</h3>
+        <div class="tags">
+          <span class="tag">Landfill Estimation</span>
+          <span class="tag">Process Safety</span>
+          <span class="tag">Monte Carlo Simulation</span>
+          <span class="tag">Risk Modeling</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="reveal">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">Career Journey</span>
+      <h2>Professional <span class="underline">experience</span></h2>
+      <p>Roles and internships across industry, utilities, and sustainability programs.</p>
+    </div>
+    <div class="timeline">
+      <div class="tl-item">
+        <h3>Environmental Expert</h3>
+        <div class="tl-meta">
+          ARAR Group of Companies <span class="sep">·</span>
+          Aug 2026 – Present <span class="sep">·</span>
+          <span class="place">Lahore, Pakistan</span>
+        </div>
+        <ul>
+          <li>Supporting environmental compliance and sustainability initiatives across group operations.</li>
+          <li>Contributing to environmental monitoring, reporting, and regulatory alignment.</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <h3>Sustainability Intern</h3>
+        <div class="tl-meta">
+          PRGMEA <span class="sep">·</span>
+          Jun 2026 <span class="sep">·</span>
+          <span class="place">Lahore, Pakistan</span>
+        </div>
+        <ul>
+          <li>Completed a focused internship on sustainability, climate change, carbon management, and environmental responsibility.</li>
+          <li>Participated in professional development sessions led by environmental and industry experts.</li>
+          <li>Collaborated on climate solutions and sustainability initiatives, including the CO₂ Talks Initiative with GCU Lahore.</li>
+          <li>Strengthened knowledge of environmental stewardship, sustainability reporting, and carbon awareness.</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <h3>President — Environmental & Horticultural Society</h3>
+        <div class="tl-meta">
+          UET Taxila <span class="sep">·</span>
+          Sep 2025 – Jun 2026 <span class="sep">·</span>
+          <span class="place">Taxila, Pakistan</span>
+        </div>
+        <ul>
+          <li>Led student-led environmental initiatives, awareness campaigns, and campus sustainability activities.</li>
+          <li>Coordinated teams, events, and outreach programs across the department and university.</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <h3>Summer Intern</h3>
+        <div class="tl-meta">
+          Punjab WASA (Water & Sanitation Agency) <span class="sep">·</span>
+          Jun 2025 – Jul 2025 <span class="sep">·</span>
+          <span class="place">Multan, Pakistan</span>
+        </div>
+        <ul>
+          <li>Assisted in monitoring sewerage and wastewater disposal systems to ensure operational efficiency and regulatory compliance.</li>
+          <li>Conducted GIS-based mapping and spatial analysis of sewerage infrastructure for improved planning.</li>
+          <li>Supported HSE compliance monitoring by ensuring adherence to safety standards during field operations.</li>
+          <li>Observed wastewater treatment processes and identified operational challenges in municipal systems.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="reveal">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">Portfolio</span>
+      <h2>Featured <span class="underline">projects</span> & research</h2>
+      <p>Applied research and engineering work with measurable environmental outcomes.</p>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-head">
+          <h3>Process Optimization for Effective BOD & COD Removal in Beverage Industrial Effluent</h3>
+          <div class="date">📅 Sep 2025 – Jun 2026 · Final Year Project</div>
+        </div>
+        <div class="project-body">
+          <p><strong>Objective:</strong> Reduce BOD and COD in beverage industry wastewater using physicochemical treatment.</p>
+          <p><strong>Problem:</strong> After anaerobic treatment, effluent still contained 980 mg/L COD and 427 mg/L BOD₅ — well above discharge limits.</p>
+          <p><strong>Approach:</strong> Optimized pH and coagulant dosing, followed by oxidative polishing.</p>
+          <div class="metric-row">
+            <div class="metric"><div class="num">88%</div><div class="lbl">COD Removal</div></div>
+            <div class="metric"><div class="num">84%</div><div class="lbl">BOD₅ Removal</div></div>
+            <div class="metric"><div class="num">115</div><div class="lbl">mg/L Final COD</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-head">
+          <h3>Designing an AI-Powered EHS Risk Calculator: A Hybrid Computational Model</h3>
+          <div class="date">📅 Accepted · 8th Annual Scientific Conference (2026), RMU</div>
+        </div>
+        <div class="project-body">
+          <p>An AI-assisted Environmental, Health & Safety risk calculator integrating probabilistic modeling, Monte Carlo simulation, sensitivity analysis, and a rule-based expert system.</p>
+          <p>Aims to improve consistency, transparency, and reliability of industrial risk assessment.</p>
+          <a class="pub-link" href="https://www.researchgate.net/publication/413824041_Designing_an_AI-powered_Environmental_Health_and_Safety_Risk_Calculator_A_Hybrid_Computational_Model" target="_blank" rel="noopener">🔗 View on ResearchGate →</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-head">
+          <h3>Comparative LCA of Conventional vs. ZDHC-Compliant Textile Wastewater Treatment</h3>
+          <div class="date">📅 Presented · CSCE'26, CUST Islamabad</div>
+        </div>
+        <div class="project-body">
+          <p>Life Cycle Assessment comparing environmental performance of conventional and Zero Discharge of Hazardous Chemicals (ZDHC)-compliant textile wastewater treatment systems.</p>
+          <p>Supports cleaner production and sustainable wastewater management in the textile sector.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section id="publications" class="reveal">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">Research Output</span>
+      <h2>Publications & <span class="underline">conferences</span></h2>
+      <p>Peer-reviewed contributions to environmental engineering and sustainability research.</p>
+    </div>
+    <div class="pub-list">
+      <div class="pub">
+        <h4>Comparative Life Cycle Assessment of Conventional and ZDHC-Compliant Textile Wastewater Treatment Systems</h4>
+        <div class="venue">8th Conference on Sustainability in Civil Engineering (CSCE'26), CUST Islamabad · Aug 2026</div>
+        <span class="status">Presented</span>
+      </div>
+      <div class="pub">
+        <h4>Designing an AI-Powered Environmental, Health and Safety Risk Calculator: A Hybrid Computational Model</h4>
+        <div class="venue">8th Annual Scientific Conference (2026), Rawalpindi Medical University (RMU) · May 2026</div>
+        <span class="status">Accepted</span>
+        <a class="pub-link" href="https://www.researchgate.net/publication/413824041_Designing_an_AI-powered_Environmental_Health_and_Safety_Risk_Calculator_A_Hybrid_Computational_Model" target="_blank" rel="noopener">🔗 View on ResearchGate →</a>
+      </div>
+      <div class="pub">
+        <h4>Assessing the Validity of Compliance Monitoring Data for River Water-Quality Modelling: A Conservative-Tracer Approach</h4>
+        <div class="venue">2nd International Conference on Climate Change, Environment, and Sustainability (13CES-26), 2026</div>
+        <span class="status">Accepted</span>
+      </div>
+      <div class="pub">
+        <h4>Water Quality Status and Alkalinity-Limited Ferric Chloride Coagulation of the Mohra Morado Stream, Taxila</h4>
+        <div class="venue">2nd International Conference on Climate Change, Environment, and Sustainability (13CES-26), 2026</div>
+        <span class="status">Accepted</span>
+      </div>
+      <div class="pub">
+        <h4>Mass-Based Comparative Life Cycle Assessment of PET Bottles, Aluminium Cans, and Tetra Pak Cartons for Beverage Packaging</h4>
+        <div class="venue">2nd International Conference on Climate Change, Environment, and Sustainability (13CES-26), 2026</div>
+        <span class="status">Accepted</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="reveal">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">Continuous Learning</span>
+      <h2>Licenses & <span class="underline">certifications</span></h2>
+      <p>Professional development across HSE, sustainability, environmental management, and process safety. Click verify links where available.</p>
+    </div>
+    <div class="cert-grid">
+
+      <!-- ADB -->
+      <div class="cert">
+        <div class="badge">ADB</div>
+        <div>
+          <div class="name">Building Effective Systems for On-site Sanitation Management</div>
+          <div class="issuer">Asian Development Bank Institute · Aug 2026</div>
+          <div class="cred-id">ID: 191944-178-712-4646</div>
+          <a class="verify" href="https://elearning-adbi.org/certificate-verifier/?&code=191944-178-712-4646" target="_blank" rel="noopener">Verify certificate →</a>
+        </div>
+      </div>
+      <div class="cert">
+        <div class="badge">ADB</div>
+        <div>
+          <div class="name">Achieving Sustainable Development Goals on Water and Sanitation</div>
+          <div class="issuer">Asian Development Bank Institute · Aug 2026</div>
+          <div class="cred-id">ID: 191944-178-729-1381</div>
+          <a class="verify" href="https://elearning-adbi.org/certificate-verifier/?&code=191944-178-729-1381" target="_blank" rel="noopener">Verify certificate →</a>
+        </div>
+      </div>
+      <div class="cert">
+        <div class="badge gold">CC</div>
+        <div>
+          <div class="name">Climate Change and Sovereign Risk</div>
+          <div class="issuer">Asian Development Bank Institute · Aug 2026</div>
+          <div class="cred-id">ID: 191944-178-737-5044</div>
+          <a class="verify" href="https://elearning-adbi.org/certificate-verifier/?&code=191944-178-737-5044" target="_blank" rel="noopener">Verify certificate →</a>
+        </div>
+      </div>
+
+      <!-- ISO -->
+      <div class="cert">
+        <div class="badge">ISO</div>
+        <div>
+          <div class="name">ISO 14001:2015 Environmental Management System Awareness</div>
+          <div class="issuer">The Knights of Safety Academy · Aug 2026</div>
+          <div class="cred-id">ID: e94zp46ypk</div>
+        </div>
+      </div>
+      <div class="cert">
+        <div class="badge">ISO</div>
+        <div>
+          <div class="name">ISO 14001:2026 Awareness</div>
+          <div class="issuer">Safety-Verse & The Knights of Safety Academy · Aug 2026</div>
+          <div class="cred-id">ID: mscnahoi65</div>
+        </div>
+      </div>
+      <div class="cert">
+        <div class="badge">ISO</div>
+        <div>
+          <div class="name">ISO 45004:2024 Awareness Course</div>
+          <div class="issuer">Safety-Verse & The Knights of Safety Academy · Aug 2026</div>
+          <div class="cred-id">ID: m6nglqx9xr</div>
+        </div>
+      </div>
+      <div class="cert">
+        <div class="badge gold">PPE</div>
+        <div>
+          <div class="name">Personal Protective Equipment (PPE)</div>
+          <div class="issuer">The Knights of Safety Academy · Aug 2026</div>
+          <div class="cred-id">ID: t8slclcaf9</div>
+        </div>
+      </div>
+      <div class="cert">
+        <div class="badge gold">TRA</div>
+        <div>
+          <div class="name">Task Risk Assessment Basics for the Accidental Health and Safety Officer</div>
+          <div class="issuer">The Knights of Safety Academy · Aug 2026</div>
+          <div class="cred-id">ID: esw5vjvami</div>
+        </div>
+      </div>
+      <div class="cert">
+        <div class="badge gold">COS</div>
+        <div>
+          <div class="name">COSHH Risk Assessor Certification™</div>
+          <div class="issuer">The Knights of Safety Academy · Aug 2026</div>
+          <div class="cred-id">ID: rdmqbpszu5</div>
+        </div>
+      </div>
+
+      <!-- Coursera / others -->
+      <div class="cert">
+        <div class="badge mixed">🔥</div>
+        <div>
+          <div class="name">Fire and Explosion Hazards Analysis</div>
+          <div class="issuer">Coursera · Dec 2025</div>
+          <div class="cred-id">ID: FK6X8J1XVUYG</div>
+          <a class="verify" href="https://www.coursera.org/account/accomplishments/verify/FK6X8J1XVUYG" target="_blank" rel="noopener">Verify certificate →</a>
+        </div>
+      </div>
+      <div class="cert">
+        <div class="badge mixed">⚗</div>
+        <div>
+          <div class="name">Chemical Hazards and Process Safety Specialization</div>
+          <div class="issuer">Coursera · Dec 2025</div>
+          <div class="cred-id">ID: NQ5M26QOM0XJ</div>
+          <a class="verify" href="https://www.coursera.org/account/accomplishments/specialization/NQ5M26QOM0XJ" target="_blank" rel="noopener">Verify certificate →</a>
+        </div>
+      </div>
+      <div class="cert">
+        <div class="badge mixed">UC</div>
+        <div>
+          <div class="name">Predictive Models for Toxic Chemical Releases</div>
+          <div class="issuer">University of California, Davis · Aug 2025</div>
+          <div class="cred-id">ID: UTJFM2CFSIYS</div>
+          <a class="verify" href="https://www.coursera.org/account/accomplishments/verify/UTJFM2CFSIYS" target="_blank" rel="noopener">Verify certificate →</a>
+        </div>
+      </div>
+      <div class="cert">
+        <div class="badge mixed">UC</div>
+        <div>
+          <div class="name">Introduction to Process Safety and Risk Analysis</div>
+          <div class="issuer">University of California, Davis · Jul 2025</div>
+          <div class="cred-id">ID: UU2J4Q1Q42C6</div>
+          <a class="verify" href="https://www.coursera.org/account/accomplishments/verify/UU2J4Q1Q42C6" target="_blank" rel="noopener">Verify certificate →</a>
+        </div>
+      </div>
+      <div class="cert">
+        <div class="badge">DTU</div>
+        <div>
+          <div class="name">Global Environmental Management</div>
+          <div class="issuer">Technical University of Denmark · Jul 2025</div>
+          <div class="cred-id">ID: KB7DBHYGQFXU</div>
+          <a class="verify" href="https://www.coursera.org/account/accomplishments/verify/KB7DBHYGQFXU" target="_blank" rel="noopener">Verify certificate →</a>
+        </div>
+      </div>
+      <div class="cert">
+        <div class="badge">OSHA</div>
+        <div>
+          <div class="name">Introduction to OSHA: Safety Standards and Compliance</div>
+          <div class="issuer">Coursera · Jul 2025</div>
+          <div class="cred-id">ID: OBQ3Q5KAYHEW</div>
+          <a class="verify" href="https://www.coursera.org/account/accomplishments/verify/OBQ3Q5KAYHEW" target="_blank" rel="noopener">Verify certificate →</a>
+        </div>
+      </div>
+      <div class="cert">
+        <div class="badge">UM</div>
+        <div>
+          <div class="name">Environmental Health: The Foundation of Global Public Health</div>
+          <div class="issuer">University of Michigan · Jul 2025</div>
+          <div class="cred-id">ID: C5H50UF3AGL7</div>
+          <a class="verify" href="https://www.coursera.org/account/accomplishments/verify/C5H50UF3AGL7" target="_blank" rel="noopener">Verify certificate →</a>
+        </div>
+      </div>
+      <div class="cert">
+        <div class="badge">HRCI</div>
+        <div>
+          <div class="name">Compliance and Risk Management</div>
+          <div class="issuer">HRCI · Jul 2025</div>
+          <div class="cred-id">ID: 6HLQZKJPH3MM</div>
+        </div>
+      </div>
+      <div class="cert">
+        <div class="badge gold">UD</div>
+        <div>
+          <div class="name">Safety Leadership: Industry Workplace Health and Safety 2.0</div>
+          <div class="issuer">Udemy · Jun 2025</div>
+          <div class="cred-id">ID: UC-428aa48b...</div>
+        </div>
+      </div>
+      <div class="cert">
+        <div class="badge">BI</div>
+        <div>
+          <div class="name">Quality Improvement and Management</div>
+          <div class="issuer">Board Infinity · Jun 2025</div>
+          <div class="cred-id">ID: BFXP3H8YYNI7</div>
+          <a class="verify" href="https://www.coursera.org/account/accomplishments/verify/BFXP3H8YYNI7" target="_blank" rel="noopener">Verify certificate →</a>
+        </div>
+      </div>
+      <div class="cert">
+        <div class="badge">L&T</div>
+        <div>
+          <div class="name">Utilities, Safety & Environmental Care in Oil & Gas Industry</div>
+          <div class="issuer">L&T EduTech · Jun 2025</div>
+          <div class="cred-id">ID: 82NZ769GDIVF</div>
+        </div>
+      </div>
+      <div class="cert">
+        <div class="badge mixed">⚗</div>
+        <div>
+          <div class="name">Chemical Hazards: Toxicology & Risk Assessment</div>
+          <div class="issuer">Coursera · 2025</div>
+          <div class="cred-id">ID: VL3L6UNCA1EM</div>
+          <a class="verify" href="https://www.coursera.org/account/accomplishments/verify/VL3L6UNCA1EM" target="_blank" rel="noopener">Verify certificate →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- LEADERSHIP -->
+<section id="leadership" class="reveal">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">Beyond Academics</span>
+      <h2>Leadership & <span class="underline">volunteering</span></h2>
+      <p>Driving environmental awareness, student engagement, and community service.</p>
+    </div>
+    <div class="lead-grid">
+      <div class="lead"><h4>Environmental & Horticultural Society, UET Taxila</h4><div class="role">President · Sep 2025 – Jun 2026</div><div class="org">Leading environmental initiatives and campus sustainability programs.</div></div>
+      <div class="lead"><h4>Green Youth Club, UET Taxila</h4><div class="role">Co-Director · Oct 2024 – Apr 2025</div><div class="org">Coordinated youth-led green initiatives and awareness drives.</div></div>
+      <div class="lead"><h4>Society of Environmental Engineers (SEE), UET Taxila</h4><div class="role">Joint Secretary & Promotion Co-Director · Sep 2024 – Mar 2025</div><div class="org">Organized events, outreach, and departmental engagement.</div></div>
+      <div class="lead"><h4>Institute of Transportation Engineers (ITE), UET Taxila</h4><div class="role">Finance Head · Sep 2022 – May 2023</div><div class="org">Managed budgets and financial planning for chapter activities.</div></div>
+      <div class="lead"><h4>Umeed-e-Subh Welfare Society</h4><div class="role">Co-Head · Sep 2022 – Apr 2023</div><div class="org">Led community welfare and volunteer activities.</div></div>
+      <div class="lead"><h4>National Cleaner Production Centre (NCPC)</h4><div class="role">Volunteer · May 2022</div><div class="org">Supported cleaner production and environmental service initiatives.</div></div>
+      <div class="lead"><h4>UET Taxila — Environmental Awareness Campaign</h4><div class="role">Student Volunteer · May 2024</div><div class="org">Engaged prospective students and families on sustainability and campus environmental practices.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="reveal">
+  <div class="container">
+    <div class="contact-wrap">
+      <span class="tag">Let's Connect</span>
+      <h2>Ready to build a sustainable future together?</h2>
+      <p>Open to opportunities in wastewater treatment, water reuse, HSE, environmental compliance, sustainability, research, and consulting. Feel free to reach out.</p>
+      <div class="contact-links">
+        <a href="mailto:engr.muhammadtalibrazasiddiqui@gmail.com">📧 Email</a>
+        <a href="tel:03131283384">📞 0313 128 3384</a>
+        <a href="https://www.linkedin.com/in/muhammad-talib-raza-aa32b0311" target="_blank" rel="noopener">💼 LinkedIn</a>
+        <a href="https://www.researchgate.net/profile/Muhammad-Raza-324" target="_blank" rel="noopener">🔬 ResearchGate</a>
+      </div>
+      <div class="contact-emails">
+        <div>📩 <strong>engr.muhammadtalibrazasiddiqui@gmail.com</strong></div>
+        <div>📩 <strong>muhammadtalibraza15@gmail.com</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    © <span id="year"></span> Muhammad Talib Raza · Environmental Engineer ·
+    Built with <span class="heart">♥</span> for a sustainable future.
+  </div>
+</footer>
+
+<!-- BACK TO TOP -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<script>
+  /* YEAR */
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  /* REVEAL */
+  const reveals = document.querySelectorAll('.reveal');
+  const revealObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        revealObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  reveals.forEach(r => revealObs.observe(r));
+
+  /* CLOSE MOBILE MENU */
+  document.querySelectorAll('#navlinks a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById('navlinks').classList.remove('open');
+    });
+  });
+
+  /* TYPING */
+  const typedEl = document.getElementById('typedText');
+  const phrases = [
+    '> Wastewater Treatment',
+    '> Water Reuse & Reclamation',
+    '> HSE & Risk Assessment',
+    '> Life Cycle Assessment',
+    '> Sustainability & Compliance'
+  ];
+  let pi = 0, ci = 0, deleting = false;
+
+  function type() {
+    const current = phrases[pi];
+    if (!deleting) {
+      typedEl.textContent = current.substring(0, ci++);
+      if (ci > current.length) {
+        deleting = true;
+        setTimeout(type, 1600);
+        return;
+      }
+    } else {
+      typedEl.textContent = current.substring(0, ci--);
+      if (ci < 0) {
+        deleting = false;
+        pi = (pi + 1) % phrases.length;
+        ci = 0;
+      }
+    }
+    setTimeout(type, deleting ? 40 : 70);
+  }
+  setTimeout(type, 800);
+
+  /* COUNTERS */
+  const counters = document.querySelectorAll('.counter');
+  const counterObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        const el = e.target;
+        const target = +el.dataset.target;
+        const duration = 1600;
+        const step = Math.max(1, Math.floor(target / (duration / 16)));
+        let current = 0;
+        const tick = () => {
+          current += step;
+          if (current >= target) { el.textContent = target; return; }
+          el.textContent = current;
+          requestAnimationFrame(tick);
+        };
+        tick();
+        counterObs.unobserve(el);
+      }
+    });
+  }, { threshold: 0.5 });
+  counters.forEach(c => counterObs.observe(c));
+
+  /* BACK TO TOP */
+  const backBtn = document.getElementById('backToTop');
+  window.addEventListener('scroll', () => {
+    backBtn.classList.toggle('visible', window.scrollY > 600);
+  });
+  backBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  /* PROGRESS */
+  const progressBar = document.getElementById('progressBar');
+  window.addEventListener('scroll', () => {
+    const h = document.documentElement;
+    const scrolled = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+    progressBar.style.width = scrolled + '%';
+  });
+
+  /* THEME */
+  const themeBtn = document.getElementById('themeToggle');
+  const saved = localStorage.getItem('theme');
+  if (saved === 'dark') {
+    document.body.classList.add('dark-mode');
+    themeBtn.textContent = '☀️';
+  }
+  themeBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    const isDark = document.body.classList.contains('dark-mode');
+    themeBtn.textContent = isDark ? '☀️' : '🌙';
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  });
+
+  /* ACTIVE NAV */
+  const navLinks = document.querySelectorAll('.nav-link');
+  const sections = document.querySelectorAll('section[id]');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(sec => {
+      const top = sec.offsetTop - 120;
+      if (window.scrollY >= top) current = sec.id;
+    });
+    navLinks.forEach(link => {
+      link.classList.toggle('active', link.getAttribute('href') === '#' + current);
+    });
+  });
+</script>
+
+</body>
+</html>
